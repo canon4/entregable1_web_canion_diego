@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #0a101a;
+}
+
+header {
+  width: 100vw;
+  height: 10vh;
+  background-color: #151c27;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 100%;
+  grid-template-areas: "logo titulo nav";
+}
+
+#logo {
+  grid: logo;
+  /* background-color: rebeccapurple; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#img-logo {
+  aspect-ratio: 1 / 1;
+  height: 70%;
+  background-color: #00f6aa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10%;
+  img {
+    width: 80%;
+    height: 70%;
+  }
+}
+
+#title {
+  grid-area: titulo;
+  /* background-color: aqua; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+#text-present {
+  font-size: 1.5rem;
+}
+p {
+  width: 80%;
+  color: white;
+  font-size: 1rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+h1 {
+  width: 80%;
+  color: white;
+  font-size: 2rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  width: 80%;
+  color: white;
+  font-size: 2rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+#nav-content {
+  grid-area: nav;
+  /* background-color: rgb(19, 19, 207); */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  aspect-ratio: 1 / 1;
+  height: 70%;
+  background-color: #00f6aa;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  border-radius: 10%;
+  img {
+    width: 70%;
+    aspect-ratio: 1 /1;
+  }
+}
+
+/* presentacion  */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#presentacion {
+  display: flex;
+  flex-direction: column;
+  /* background-color: #00f6aa; */
+  height: 50vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* perfil hea¿xagono */
+.hexagon {
+  width: 100%;
+  height: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  flex-wrap: wrap;
+  img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    /* Hexágono */
+    clip-path: polygon(25% 6%, 75% 6%, 100% 50%, 75% 94%, 25% 94%, 0% 50%);
+    min-width: 200px; /* tamaño del hexágono */
+    min-height: 200px;
+  }
+}
+
+/* Hobbies */
+
+#hobbie {
+  margin-bottom: 20px;
+}
+
+#info {
+  /* background-color: rebeccapurple; */
+  width: 100vw;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.articulos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.hobbie-info {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.img-hobbie {
+  /* background-color: aqua; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgs {
+  max-width: 360px;
+}
+
+/* footer */
+
+footer {
+  width: 100vw;
+  height: 15vh;
+  background-color: #151c27;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#contact {
+  width: 80%;
+  height: 60%;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.redes {
+  height: 100%;
+  aspect-ratio: 1 / 1;
+
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-redes {
+  height: 100%;
+  width: 100%;
+}
+
+@media (min-width: 790px) and (max-width: 1020px) {
+  #presentacion {
+    flex-direction: row;
+  }
+
+  #saludo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #h2-saludo {
+    text-align: left;
+  }
+}
