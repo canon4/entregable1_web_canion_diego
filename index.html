@@ -23,7 +23,13 @@
       <div id="title">
         <h1>DIEGO DEV!</h1>
       </div>
-
+      <ul>
+        <li><a class="menu-option" href="#presentacion">Inicio</a></li>
+        <li><a class="menu-option" href="#estudios">Estudios</a></li>
+        <li><a class="menu-option" href="#hobbie">Hobbies</a></li>
+        <li><a class="menu-option" href="#habilidades">Habilidades</a></li>
+        <li><a class="menu-option" href="#proyectos">Proyectos</a></li>
+      </ul>
       <div id="nav-content">
         <nav>
           <img
@@ -33,10 +39,6 @@
           />
         </nav>
       </div>
-
-      <div id="barra">
-        <div id="progreso"></div>
-      </div>
     </header>
 
     <main>
@@ -44,15 +46,21 @@
         <div id="saludo">
           <h2 id="h2-saludo">¡Hola! Soy <b>Diego</b></h2>
           <p id="text-present">
-            Estudiante de Ingeniería de Sistemas y un apasionado por la
+            Estudiante de Ingeniería de Sistemas y apasionado por la
             programación.
           </p>
+          <p id="rol">
+            Desarrollador backend en formación, con experiencia en Java, Spring
+            Boot y MySQL.
+          </p>
+          <a href="#proyectos" class="btn">Ver mis proyectos</a>
         </div>
 
-        <div class="hexagon">
-          <img src="./img/profile.jpeg" alt="Foto de perfil" />
+        <div class="foto-perfil">
+          <img id="img-perfil" src="./img/profile.jpeg" alt="Foto de perfil" />
         </div>
       </section>
+
       <section id="info">
         <article class="articulos" id="estudios">
           <div class="hobbie-info">
@@ -67,7 +75,7 @@
           <div class="img-hobbie">
             <img
               class="imgs"
-              id="teatro-img"
+              id="estudio-img"
               src="./img/estudios.jpeg"
               alt="img teatro"
             />
@@ -95,6 +103,70 @@
           </div>
         </article>
       </section>
+
+      <div class="skills-exp">
+        <section id="habilidades">
+          <h2>HABILIDADES</h2>
+          <ul>
+            <li>Java, Spring Boot</li>
+            <li>MySQL</li>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Git, GitHub</li>
+          </ul>
+        </section>
+        <section id="experiencia">
+          <h2>EXPERIENCIA</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <h3>Universidad de la Amazonia</h3>
+              <span>2022 - Actualidad</span>
+              <p>
+                Desarrollador de proyectos académicos en sistemas distribuidos y
+                aplicaciones web.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section id="proyectos">
+        <h2>PROYECTOS</h2>
+        <div class="cards">
+          <div class="card">
+            <img src="./img/java.svg" alt="Sistema POS" />
+            <div class="card-content">
+              <h3>Sistema POS Delicias Express</h3>
+              <p>Sistema de ventas con Java y MySQL.</p>
+              <a href="https://github.com/canon4/Delicias_Express" class="btn"
+                >Ver más</a
+              >
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="./img/markov.png"
+              alt="Calculadora de Cadenas de Markov"
+            />
+            <div class="card-content">
+              <h3>Calculadora de Cadenas de Markov</h3>
+              <p>
+                Herramienta web para resolver cadenas absorbentes y no
+                absorbentes.
+              </p>
+              <a href="https://github.com/canon4/cadenas-de-markov" class="btn"
+                >Ver más</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <form id="form-contacto">
+        <input type="text" placeholder="Tu nombre" required />
+        <input type="email" placeholder="Tu correo" required />
+        <textarea placeholder="Escribe tu mensaje"></textarea>
+        <button type="submit">Enviar</button>
+      </form> -->
     </main>
     <footer>
       <div id="contact">
@@ -102,22 +174,43 @@
           <a href="https://wa.me/57320877583">
             <img
               class="img-redes"
+              id="img-whatsapp"
               src="./img/whatsapp.png"
               alt="whatsapp logo"
             />
           </a>
         </div>
-        <div class="redes" id="facebook">
-          <a href=""></a>
-          <img class="img-redes" src="./img/facebook.png" alt="facebook logo" />
+
+        <div class="redes" id="github">
+          <a href="http://github.com/canon4">
+            <img
+              class="img-redes"
+              id="img-github"
+              src="./img/github.png"
+              alt="github logo"
+            />
+          </a>
         </div>
         <div class="redes" id="github">
-          <a href="">
-            <img class="img-redes" src="./img/github.png" alt="github logo" />
+          <a href="http://github.com/canon4">
+            <img
+              class="img-redes"
+              id="img-github"
+              src="./img/facebook.png"
+              alt="github logo"
+            />
           </a>
         </div>
       </div>
-      <p>&copy; 2025 por Diego Cañon</p>
+      <div class="datos">
+        <h3>Contacto</h3>
+        <p>Email: diego@example.com</p>
+        <p>Tel: +57 300 000 0000</p>
+      </div>
+
+      <div class="copyright">
+        <p>&copy; 2025 Diego Cañón. Todos los derechos reservados.</p>
+      </div>
     </footer>
   </body>
 </html>
